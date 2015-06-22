@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+    <title>Error</title>
+</head>
+<body>
+<div  layout:fragment="content">
+
+    <h1 th:text="${title}">Title</h1>
+    <p class="alert alert-error">Access denied:
+        you do not have permission for that resource</p>
+    <div th:text="${message}">Fake content</div>
+    <div>Please contact the operator with the above information.</div>
+</div>
+</body>
+</html>
