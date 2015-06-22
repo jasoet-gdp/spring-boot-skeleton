@@ -1,6 +1,6 @@
-package id.gdplabs.olympia.pts.infra.util.converter;
+package id.gdplabs.olympia.pts.util.converter;
 
-import id.gdplabs.olympia.pts.domain.value.TransactionType;
+import id.gdplabs.olympia.pts.value.TransactionType;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

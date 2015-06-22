@@ -1,6 +1,6 @@
-package id.gdplabs.olympia.pts.infra.util.converter;
+package id.gdplabs.olympia.pts.util.converter;
 
-import id.gdplabs.olympia.pts.domain.value.DiscountType;
+import id.gdplabs.olympia.pts.value.DiscountType;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

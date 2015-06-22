@@ -1,4 +1,4 @@
-package id.gdplabs.olympia.pts.infra.config;
+package id.gdplabs.olympia.pts.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

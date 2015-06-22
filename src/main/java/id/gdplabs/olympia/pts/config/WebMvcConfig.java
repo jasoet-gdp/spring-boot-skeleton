@@ -1,4 +1,4 @@
-package id.gdplabs.olympia.pts.infra.config;
+package id.gdplabs.olympia.pts.config;
 
 /**
  * Created by Deny Prasetyo

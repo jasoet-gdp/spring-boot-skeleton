@@ -1,7 +1,7 @@
-package id.gdplabs.olympia.pts.domain.entity;
+package id.gdplabs.olympia.pts.entity;
 
-import id.gdplabs.olympia.pts.domain.value.DiscountType;
-import id.gdplabs.olympia.pts.domain.value.TransactionType;
+import id.gdplabs.olympia.pts.value.DiscountType;
+import id.gdplabs.olympia.pts.value.TransactionType;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Column;

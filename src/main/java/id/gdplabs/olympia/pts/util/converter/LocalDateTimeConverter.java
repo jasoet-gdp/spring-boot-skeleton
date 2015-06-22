@@ -1,9 +1,7 @@
-package id.gdplabs.olympia.pts.infra.util.converter;
+package id.gdplabs.olympia.pts.util.converter;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
-import java.time.Instant;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;

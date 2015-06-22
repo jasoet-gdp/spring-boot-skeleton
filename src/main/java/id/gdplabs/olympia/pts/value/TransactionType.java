@@ -1,4 +1,4 @@
-package id.gdplabs.olympia.pts.domain.value;
+package id.gdplabs.olympia.pts.value;
 
 /**
  * Created by Deny Prasetyo
@@ -9,6 +9,6 @@ package id.gdplabs.olympia.pts.domain.value;
  */
 
 
-public enum DiscountType {
-    PERCENTAGE, VALUE
+public enum TransactionType {
+    ALL,SALES,SERVICE,OTHER
 }
