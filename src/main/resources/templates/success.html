@@ -3,16 +3,15 @@
       xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
       layout:decorator="layout">
 <head>
-    <title>Error</title>
+    <title>Success Page</title>
 </head>
 <body>
 <div  layout:fragment="content">
 
     <h1 th:text="${title}">Title</h1>
-    <p class="alert alert-error">Access denied:
-        you do not have permission for that resource</p>
+    <p class="alert alert-error">Success Page</p>
     <div th:text="${message}">Fake content</div>
-    <div>Please contact the operator with the above information.</div>
+    <div>This is Success Page</div>
 </div>
 </body>
 </html>
