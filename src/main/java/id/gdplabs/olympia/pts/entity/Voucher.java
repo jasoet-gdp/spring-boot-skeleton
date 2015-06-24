@@ -116,4 +116,18 @@ public class Voucher extends AbstractPersistable<Long> {
     public void setActive(boolean active) {
         this.active = active;
     }
+
+    @Override
+    public String toString() {
+        return "Voucher{" +
+                "code='" + code + '\'' +
+                ", transactionType=" + transactionType +
+                ", discountType=" + discountType +
+                ", discountValue=" + discountValue +
+                ", validFrom=" + validFrom +
+                ", validUntil=" + validUntil +
+                ", transactionId='" + transactionId + '\'' +
+                ", active=" + active +
+                '}';
+    }
 }
