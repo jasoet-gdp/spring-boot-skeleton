@@ -5,6 +5,7 @@ build
 *.iml
 
 logs
+*.log
 
 # Eclipse Setting
 /.metadata
