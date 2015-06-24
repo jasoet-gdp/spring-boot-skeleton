@@ -4,7 +4,6 @@ import id.gdplabs.olympia.pts.value.DiscountType;
 import id.gdplabs.olympia.pts.value.TransactionType;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import java.time.LocalDate;
 
@@ -19,14 +18,22 @@ import java.time.LocalDate;
 @Entity
 public class Voucher extends AbstractPersistable<Long> {
 
-    @Column(unique = true)
     private String code;
     private TransactionType transactionType;
     private DiscountType discountType;
     private Double discountValue;
     private LocalDate validFrom;
     private LocalDate validUntil;
+    private String transactionId;
     private boolean active;
+
+    public String getTransactionId() {
+        return transactionId;
+    }
+
+    public void setTransactionId(String transactionId) {
+        this.transactionId = transactionId;
+    }
 
     public String getCode() {
         return code;
