@@ -3,6 +3,7 @@ package id.gdplabs.olympia.pts.repository.impl;
 import id.gdplabs.olympia.pts.entity.Voucher;
 import id.gdplabs.olympia.pts.repository.extra.VoucherRepositoryExtra;
 import javaslang.control.Try;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -31,6 +32,11 @@ public class VoucherRepositoryImpl implements VoucherRepositoryExtra {
 
         Try<Voucher> voucherTry = Try.of(() -> entityManager.find(Voucher.class, id));
         if (voucherTry.isFailure()) {
+            return false;
+        }
+
+
+        if (StringUtils.isNotBlank(voucherTry.get().getTransactionId())){
             return false;
         }
 
